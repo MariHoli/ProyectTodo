@@ -1,7 +1,7 @@
 /*change the backtheme (body)*/
 body{
 
-    background-image: url(84879c6ffd497bf3449d80876954e5ee.jpg);
+    background-color: #7ba9bb;
 }
 
 
@@ -77,13 +77,13 @@ body{
   
   /* Style the header */
   .header {
-    background-color: #edf2f4;
-    padding: 20px 20px;
+    background-color: #7ba9bb;
+    padding: 20px 40px;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 40%;
+    width: 70%;
     margin: auto;
   
   }
@@ -100,10 +100,10 @@ body{
     margin: 0;
     border: none;
     border-radius: 10px;
-    width: 55%;
+    width: 65%;
     padding: 10px;
-    float: left;
-    font-size: 16px;
+    float: center;
+    font-size: 20px;
   }
   
   /* Style the "Add" button */
@@ -134,5 +134,6 @@ body{
   height: 100px;
   border-radius: 50px;
   text-align: center;
+  
 }
   

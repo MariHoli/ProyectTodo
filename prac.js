@@ -33,7 +33,15 @@ list.addEventListener(
   "click",
   function (ev) {
     if (ev.target.tagName === "LI") {
+      console.log(ev.target.classList[0]);
       ev.target.classList.toggle("checked");
+      if (ev.target.classList[0]==='checked') {
+        contador++
+      }else{
+        contador--;
+      }
+      //ev.target.classList[0]==='checked' ? contador++ : contador--;
+      conta.textContent=contador
     }
   },
   false
@@ -43,6 +51,7 @@ list.addEventListener(
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
+  verificar(inputValue);
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === "") {
@@ -52,9 +61,6 @@ function newElement() {
   }
   document.getElementById("myInput").value = "";
 
-  contador++;
-  conta.textContent = contador
-
   var img = document.createElement("img");
   img.className = "close";
   img.src = "./borrar.png";
@@ -63,7 +69,12 @@ function newElement() {
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       var div = this.parentElement;
-      div.style.display = "none";
+      div.remove()
     };
   }
+}
+//
+function verificar (tarea){
+  
+console.log(tarea);
 }
