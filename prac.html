@@ -10,15 +10,17 @@
   <body>
     <div id="myDIV" class="header">
         <div id="izq">
-            <h3>LISTA DE TAREAS</h3>
-            <h2>TAREAS POR HACER</h2>
+            <h2>LISTA DE TAREAS</h2>
+            <h4>TAREAS POR HACER</h4>
             <input type="text" id="myInput" placeholder="Ingresar tarea" />
-            <strong
-              ><span onclick="newElement()" class="addBtn">AGREGAR</span></strong>
-        </div>
-        <h2>Tareas realizadas</h2>
-        <div id="der">
-            0
+            <strong style="display: flex; align-items: center;"><span onclick="newElement()" class="addBtn">AGREGAR</span></strong>
+            <div class="algo">
+              <h2>Tareas realizadas</h2>
+                <div id="der">
+                    0
+                </div>
+
+            </div>  
         </div>
     </div>
     <ul id="myUL">
