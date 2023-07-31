@@ -77,3 +77,7 @@ function verificar (tarea){
   
 console.log(tarea);
 }
+function suma (a,b) { 
+  var total= a+b;
+}
+suma (10,5)
