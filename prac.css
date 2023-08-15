@@ -1,0 +1,141 @@
+/*cambiar el tema de fondo (cuerpo)(cuerpo)*/
+body{
+
+    background-color: #99e1d9;
+}
+
+
+  /* Eliminar márgenes y relleno de la lista */
+  ul {
+    margin: 30px;
+    padding: 10px;
+  }
+  
+  /* Estilo de los elementos de la lista */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #e3e3e3;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 10px;
+  
+    /* hacer que los elementos de la lista no se puedan seleccionar */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    margin-bottom: 20px;
+  }
+  
+  /* Establecer todos los elementos impares de la lista en un color diferente*/
+  ul li:nth-child(odd) {
+    background: #e3e3e3;
+  }
+
+  
+  /* Al hacer click, agregue un color de fondo y tache el texto */
+  ul li.checked {
+    background: #e3e3e3;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+
+  
+  }
+  
+  /* Dale estilo al botón de cerrar */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #fa1100;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  /* Dale estilo al encabezado */
+  .header {
+    background-color: #fffae3;
+    padding: 20px 40px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+  
+  }
+  
+  /* Borrar flotantes después del encabezado */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Estilo de la entrada */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    height: 10%;
+    padding: 40px;
+    float: center;
+    font-size: 20px;
+  }
+  
+  /* Dale estilo al botón "Agregar" */
+  .addBtn {
+    padding: 10px;
+    width: 75%;
+    background: #19bbc7;
+    color: #000000;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+  
+  .addBtn:hover {
+    background-color: #0086f3;
+  }
+  #izq{
+    display: flex;
+    background-color: #7ba9bb(254, 248, 248, 0.587);
+  }
+#der{
+
+  margin: 15px;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  text-align: center;
+  
+}
+  
